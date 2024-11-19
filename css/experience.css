@@ -1,0 +1,156 @@
+.experience {
+    margin-top: 136px;
+}
+
+.experience__box {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 35px;
+}
+
+.experience__left {
+    padding-top: 79px;
+    margin-left: -16px;
+}
+
+.experience__right {
+    margin-right: -40px;
+}
+
+.experience__img img {
+    width: 605px;
+    height: auto;
+}
+
+.experience__subtitle {
+    column-gap: 13px;
+    justify-content: left;
+    text-align: left;
+}
+
+.experience__subtitle .subtitle-left-lines {
+    display: none;
+}
+
+.experience__title {
+    margin-bottom: 20px;
+}
+
+.experience__description {
+    margin-bottom: 42px;
+}
+
+.experience__items {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 27px;
+    row-gap: 31px;
+    max-width: 632px;
+}
+
+.experience__item {
+    display: flex;
+    align-items: center;
+    column-gap: 9px;
+}
+
+.experience__item-icon {
+    display: flex;
+}
+
+.experience__item-title {
+    color: #FFF;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+@media (max-width: 1300px) {
+    .experience__right {
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 1200px) {
+    .experience__box {
+        align-items: center;
+    }
+
+    .experience__left {
+        padding-top: 0;
+    }
+
+    .experience__img img {
+        width: 550px;
+    }
+
+    .experience__items {
+        column-gap: 20px;
+        row-gap: 20px;
+    }
+}
+
+@media (max-width: 1150px) {
+    .experience__img img {
+        width: 500px;
+    }
+}
+
+@media (max-width: 1100px) {
+    .experience__box {
+        flex-direction: column-reverse;
+        row-gap: 30px;
+    }
+
+    .experience__subtitle .subtitle-left-lines {
+        display: block;
+    }
+
+    .experience__img img {
+        width: 700px;
+    }
+
+    .experience__subtitle {
+        justify-content: center;
+    }
+
+    .experience__items {
+        width: fit-content;
+        margin: 0 auto;
+    }
+
+    .experience__title,
+    .experience__description {
+        text-align: center;
+        margin: 0 auto 25px auto;
+    }
+}
+
+@media (max-width: 850px) {
+    .experience {
+        margin-top: 100px;
+    }
+}
+
+@media (max-width: 550px) {
+    .experience__items {
+        grid-template-columns: 1fr;
+    }
+
+    .experience__item-title {
+        font-size: 19px;
+    }
+}
+
+@media (max-width: 540px) {
+    .experience__img img {
+        width: 600px;
+    }
+}
+
+@media (max-width: 470px) {
+    .experience__img img {
+        width: 500px;
+    }
+}
